@@ -1,0 +1,6 @@
+{
+  "name": "Angular2-starter-template",
+  "tagline": "Starter Template for Angular JS-2",
+  "body": "# Starter Template for Angular JS 2\r\nA Starter template for Angular JS 2.\r\n\r\n##System Requirements\r\n1. NodeJS / npm get it from https://nodejs.org/en/\r\n\r\n2. Gulp to install Gulp Globally execute `npm install --global gulp-cli`\r\n\r\n3. Git get it from https://git-scm.com/\r\n\r\n##How to Start\r\nStep 1: Clone the repository `git clone https://github.com/akshaykhale1992/angular2-starter-template.git`.\r\n\r\nStep 2: Install the dependencies `npm install`\r\n\r\nStep 3: Start the Project by executing gulp command `gulp`, done...\r\n\r\n##How it works?\r\nThe Project has `package.json` file which will be used by npm for installing dependencies and `gulpfile.js` which contains tasks for conversion of Typescript files into Javascript files and hosts the application on port `8020`.\r\n`Build folder` has files for production server and typescript files are included in `process folder`.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
