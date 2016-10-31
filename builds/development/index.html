@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Learn AngularJS2: The Basics</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <script src="js/lib/angular2/es6-shim.min.js"></script>
     <script src="js/lib/angular2/system-polyfills.js"></script>
@@ -26,6 +28,24 @@
   </head>
 
 <body>
-  <div><mycomponent>Loading...</mycomponent></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Components Examples</h1>
+      </div>
+      <div class="col-md-12">
+        <h3>A Basic component which writes some text</h3>
+          <mycomponent>
+            <img src="img/loading.gif" alt="Loading Please Wait!!!">
+          </mycomponent>
+      </div>
+      <div class="col-md-12">
+        <h3>Advanced component with property binding through interpolation</h3>
+          <advancedcomponent>
+            <img src="img/loading.gif" alt="Loading Please Wait!!!">
+          </advancedcomponent>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
