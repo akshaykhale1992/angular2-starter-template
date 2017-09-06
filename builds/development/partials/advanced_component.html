@@ -1,3 +1,40 @@
-<h4>Welcome to {{ title }}</h4>
-<p>This is an advanced Angular 2 component which loads the content from <code>builds/development/partials/advanced_component.html</code> File.</p>
-<p>The class has a property named <code>title</code>, defined in <code>/process/typescript/advanced_component.component.ts</code> file which is the component file and the file is loaded from <code>boot.ts</code> file in the same folder.</p>
+<div class="row">
+	<div class="col-md-3">
+		<input type="text" class="form-control" [(ngModel)]="branch.name">
+	</div>
+	<div class="col-md-3">
+		<input type="text" class="form-control" [(ngModel)]="branch.type" >
+	</div>
+	<div class="col-md-3">
+		<input type="text" class="form-control" [(ngModel)]="branch.pincode">
+	</div>
+	<div class="col-md-3">
+		<input type="button" class="btn btn-primary" (click)="addBranch()" value="Add Branch">
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Branch Name</th>
+					<th>Branch Type</th>
+					<th>Branch Pincode</th>
+					<th>Edit Branch</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="#branch_row of branches; #i = index">
+					<td>{{ i + 1 }}</td>
+					<td>{{ branch_row.name }}</td>
+					<td>{{ branch_row.type }}</td>
+					<td>{{ branch_row.pincode }}</td>
+					<td>
+						<button (click)="editBranch(i)" type="button" class="btn btn-default">button</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
